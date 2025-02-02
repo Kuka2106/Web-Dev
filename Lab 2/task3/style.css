@@ -1,0 +1,74 @@
+body {
+    background-color: #f0f2f0;
+    width: 100%;
+}
+form{
+    background-color: #ffffff;
+    position: absolute;
+    width: 320px;
+    height: 270px;
+    padding: 10px 5px 20px 5px;
+    text-align: center; 
+    margin: -10vh 500px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 6px -7px;
+}
+input[type = 'email number'], input[type = 'password']{
+    width: 250px;
+    display: block;
+    background-color: #ffffff;
+    margin: auto;
+    border: 1.5px solid rgb(200, 200, 200);
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    font-family: 'Segoe UI';
+    font-size: 15px;    
+}
+button{
+    border: none;
+    background-color: #1877f2;
+    color: white;
+    margin: 15px;
+    width: 250px;
+    border-radius: 5px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    text-align: center;    
+}
+.f-psw {
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    color: #1877f2;
+    width: 200px;
+    text-decoration: none;
+}
+
+.line{
+    border-top: 1px solid #222;
+    opacity: 0.2
+}
+.bnt2{
+    width: 180px;
+    font-size: 14px;
+    background-color: rgb(33, 225, 33);
+    text-align: center;  
+    margin: 15px auto;
+}
+
+.f-container{
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 30vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    margin: -20px;
+    width: 300px;
+}
+
