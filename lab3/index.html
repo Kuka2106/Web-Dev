@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id = "header">
+        <p>ToDo List</p>
+    </div>
+    <div id = "add_task">
+        <h1>ToDo List</h1>
+        <input type = "text" placeholder="New Task" id = "inp_new_task">
+        <input type="button" name="add" id="btn_add" onclick="newElement()" value = "Add">
+
+        <ul id = "list">
+        </ul>
+    </div>
+    <script>
+        function newElement(){
+            var inp = document.querySelector('#inp_new_task').value;
+            if(inp == ""){
+                alert("Task name must be filled");
+                return;
+            }
+            var el = document.createElement('li');
+            el.innerHTML = 
+            `
+            <div class = "list_div">
+                <input type = "checkbox" onchange = changeStyle(this) class = "check_box">
+                <span class = "todo_item">${inp}</span>
+            </div>
+            <button onclick = "deleteEl(this)" class = "btn_delete"><img src = trash.svg></button>
+            `;
+
+            document.querySelector('#list').appendChild(el);
+            document.querySelector('#inp_new_task').value = "";
+        }
+        function changeStyle(element) {
+            console.log(element.parentElement.querySelector('span'));
+            if(element.checked){
+                element.parentElement.querySelector('span').style.textDecoration = 'line-through';
+                flag = true;
+            }
+            else {
+                element.parentElement.querySelector('span').style.textDecoration = 'none';
+                flag = false;
+            }
+        }
+        function deleteEl(element){
+            element.parentElement.parentElement.removeChild(element.parentElement);
+        }
+        var textbox = document.getElementById('inp_new_task');
+        textbox.addEventListener("keyup", function(event){
+            if(event.keyCode == 13){
+                newElement();
+            }
+        });
+    </script>
+</body>
+
+
+</html>

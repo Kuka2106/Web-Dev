@@ -1,0 +1,49 @@
+<!--Here, an unvisited link will be green with no underline. 
+    A visited link will be pink with no underline. 
+    An active link will be yellow and underlined. 
+    In addition, when mousing over a link (a:hover) it will become red and underlined:
+-->
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+
+<!--A link can also be styled as a button, by using CSS:-->
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+
+
