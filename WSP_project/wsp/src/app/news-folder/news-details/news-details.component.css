@@ -1,0 +1,30 @@
+body{
+    background-color: white;
+    width: 1100px;
+}
+.news-image{
+    width: 800px;
+    border-radius: 9px;
+    margin-top: 70px;
+}
+hr{
+    width: 300px;
+    margin: 0;
+    border: solid;
+    border-width: 2px;
+    border-radius: 9px;
+}
+.content{
+    padding: 50px 60px;
+}
+.news-name{
+    margin: 0;
+}
+.news-descr{
+    margin: 0;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+.news-content{
+    font-size: 20px;
+}
