@@ -1,0 +1,17 @@
+<body>
+    <form [formGroup]="albumForm">
+        <button (click)="showHide()">New Album</button>
+        <br>
+        @if(newAlbumButton){
+            <div>   
+                <input type="text" formControlName="title" placeholder="Enter album title">
+                <button (click)="addAlbum()">Create New Album</button>
+            </div>
+        }
+    </form>
+    <ul>
+    @for(item of albums; track item.id){
+        <li><a routerLink="/album-detail/{{item.id}}">{{item.title}}</a></li>
+    }
+    </ul>
+</body>

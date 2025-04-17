@@ -1,0 +1,9 @@
+<p>topten works!</p>
+<ul>
+    <li *ngFor="let vacancy of vacancies">
+        <h1>Vacancy {{ vacancy.name }}</h1>
+        <p>Company: {{ getCompanyById(vacancy.company) }}</p>
+        <p>Descr: {{ vacancy.description }}</p>
+        <p>Salary:{{ vacancy.salary }} $</p>
+    </li>
+</ul>

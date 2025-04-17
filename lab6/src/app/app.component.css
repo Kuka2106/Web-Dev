@@ -1,0 +1,12 @@
+#header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: green;
+}

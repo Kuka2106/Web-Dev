@@ -1,0 +1,20 @@
+<body>
+    <h1>{{title}}</h1>
+    <div>
+        <div id="data">
+            <h2>ID: {{album?.id}}</h2>
+            <h2>USER: {{album?.userId}}</h2>
+        </div>
+        <a routerLink="/album-detail/{{album?.id}}/photos">Photos</a>
+    </div>
+    <div id="edit">
+        <button id="show_edit" (click)="showEdit()">Edit</button>
+        @if(edit){
+            <form>
+                <input type="text" placeholder="Edit Name" value="{{album?.title}}" [formControl]="newName">
+                <button (click)="updateAlbum(newName.value)">Save</button>
+                <p>{{newName.value}}</p>
+            </form>
+        }
+    </div>
+</body>

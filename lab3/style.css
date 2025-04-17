@@ -1,0 +1,104 @@
+#header{
+    height: 50px;
+    width: 100%;
+
+    background-color: black;
+    color: gray;
+
+    display: flex;
+    align-items: center;
+
+    font-family: sans-serif;
+    
+}
+p{
+    margin-left: 50px;
+}
+#add_task{
+    margin-top: 60px;
+    margin-left: 300px;
+}
+#inp_new_task{
+    margin-left: 100px;
+    width: 500px;
+    height: 30px;
+
+    border: solid;
+    border-radius: 4px;
+    border-width: 2px;
+    border-color: lightgray;
+
+    text-indent: 12px;
+}
+#btn_add{
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(26, 130, 172);        
+    margin-left: 20px;
+    color: white;
+}
+#btn_add:hover{
+    cursor: pointer;
+    background-color: rgb(23, 107, 140);      
+}
+#btn_add:active{
+    background-color: rgb(23, 132, 140);
+}
+ul{
+    list-style-type: none;
+    width: 770px;
+}
+li{
+    border: solid;
+    border-color: lightgray;
+    border-radius: 3px;
+    border-width: 1px;
+
+    padding: 10px 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    font-family: sans-serif;
+}
+.todo_item{
+    margin-left: 20px;
+    align-self: center;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.list_div{
+    display: flex;
+}
+.btn_delete{
+    cursor: pointer;
+    float: right;
+    
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_delete:hover{
+    background-color: #c1bebe;
+}
+.btn_delete:active{
+    background-color: #a5a5a552;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+.check_box{
+    cursor: pointer;
+}
