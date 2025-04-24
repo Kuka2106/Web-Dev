@@ -18,17 +18,17 @@ export class VacancyListComponent {
   companyService = inject(CompanyService);
   route = inject(ActivatedRoute)
   vacancies?: Vacancy[];
-  companyId : number = 1;
+  companyId? : number;
   company? : Company;
   ngOnInit(){
     this.route.params.subscribe((params)=>{
       console.log(params)
       this.companyId = params['id'];
     })
-    this.vacancyService.getVacanciesByCompany(this.companyId).subscribe((vacancies) => {
+    this.vacancyService.getVacanciesByCompany(this.companyId!).subscribe((vacancies) => {
       this.vacancies = vacancies;
     })
-    this.companyService.getCompanyById(this.companyId).subscribe((company)=>{
+    this.companyService.getCompanyById(this.companyId?).subscribe((company)=>{
       this.company = company;
     })
   }
